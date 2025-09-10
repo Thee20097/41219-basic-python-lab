@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dior Shop - Order Form</title>
+    <link rel="stylesheet" href="xd.css">
+</head>
+<body>
+    <header>
+        <h1>Racing-cars</h1>
+        <p>รถสุดแรงพร้อมแข่ง</p>
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>สินค้า</th>
+                    <th>ชื่อ</th>
+                    <th>รายละเอียด</th>
+                    <th>ราคา</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://racemarket.net/oc-content/uploads/63/89855.jpg" alt=" Ferrari 296 GT3"></td>
+                    <td> Ferrari 296 GT3</td>
+                    <td>GT Open Specification Year: 2023 Mileage: 30,000 km</td>
+                    <td>21 ล้านบาท</td>
+                </tr>
+                <tr>
+                    <td><img src="https://racemarket.net/oc-content/uploads/62/89026.jpg" alt="Ginetta G58"></td>
+                    <td>Ginetta G58</td>
+                    <td>Engine: 6.2L LS3 V8 producing 575 BHP (2000km, just serviced)Total Mileage: 6,000 km</td>
+                    <td>5.8 ล้านบาท</td>
+                </tr>
+                <tr>
+                    <td><img src="https://racemarket.net/oc-content/uploads/55/76032.jpg" alt="Porsche 911 GT3R (992)"></td>
+                    <td>Porsche 911 GT3R (992)</td>
+                    <td>Year: 2023 Current Milage: 9625 km </td>
+                    <td>18 ล้านบาท</td>
+                </tr>
+                <tr>
+                    <td><img src="https://racemarket.net/oc-content/uploads/60/81444.jpg" alt="Lamborghini Huracan GT3 EVO1"></td>
+                    <td>Lamborghini Huracan GT3 EVO1</td>
+                    <td>year: 2020 fully rebuilt 0km, with many spare parts. Winner car, ready to race</td>
+                    <td>8 ล้านบาท</td>
+                </tr>
+                <tr>
+                    <td><img src="https://racemarket.net/oc-content/uploads/61/84932.jpg" alt="A1 GP Race Car"></td>
+                    <td>A1 GP Race Car</td>
+                    <td>year: 2005 Mileage: 1500</td>
+                    <td>6 ล้านบาท</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="form-container">
+            <h2>แบบฟอร์มสั่งซื้อสินค้า</h2>
+            
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="fullname">ชื่อ - นามสกุล</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="john Hernandez">
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">ที่อยู่</label>
+                    <textarea id="address" name="address" placeholder="199/1 Market, Muang"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>เพศ</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">ชาย</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">หญิง</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>สีที่ชอบ</label>
+                    <div class="checkbox-group">
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="color-red" name="color" value="black">
+                            <label for="color-red">ดำ</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="color-pink" name="color" value="red">
+                            <label for="color-pink">แดง</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input type="checkbox" id="color-pink2" name="color" value="white">
+                            <label for="color-pink2">ขาว</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="province">จังหวัด</label>
+                    <select id="province" name="province">
+                        <option value="">-- กรุณาเลือกจังหวัด --</option>
+                        <option value="chiangmai" selected>เชียงใหม่</option>
+                        <option value="bangkok">กรุงเทพฯ</option>
+                        <option value="phuket">ภูเก็ต</option>
+                        <option value="krabi">กระบี่</option>
+                    </select>
+                </div>
+                
+                <div class="product-selection">
+                    <h3>สินค้าที่เลือก</h3>
+                    
+                    <div class="product-item">
+                        <img src="https://racemarket.net/oc-content/uploads/63/89855.jpg" alt="Ferrari 296 GT3">
+                        <div class="product-info">
+                            <h4>Ferrari 296 GT3</h4>
+                            <p>21 ล้านบาท</p>
+                        </div>
+                        <div class="product-quantity">
+                            <input type="number" min="1" value="1">
+                        </div>
+                    </div>
+                    
+                    <div class="product-item">
+                        <img src="https://racemarket.net/oc-content/uploads/62/89026.jpg" alt="Ginetta G58">
+                        <div class="product-info">
+                            <h4>Ginetta G58</h4>
+                            <p>5.8 ล้านบาท</p>
+                        </div>
+                        <div class="product-quantity">
+                            <input type="number" min="1" value="1">
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="button" class="submit-btn">ตกลง</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        © 2025 Racemarket.net
+    </footer>
+</body>
+</html>

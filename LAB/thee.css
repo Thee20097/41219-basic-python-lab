@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e6e9f8;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.left {
+  width: 30%;
+  padding: 20px;
+}
+
+.left img {
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid #8a96c7;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 2em;
+  color: #2c3e70;
+  margin-top: 20px;
+}
+
+.right {
+  width: 70%;
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  color: #2c3e70;
+  border-bottom: 2px solid #b0b8e6;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: '★ ';
+  color: #4a5b9d;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.award-img {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.info-box {
+  margin-top: 5px;
+}
